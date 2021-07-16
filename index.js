@@ -8,9 +8,10 @@ function removeTodo(event){
 
 function likeTodo(event){
     let Count = 0;
-    Count++;
+    Count = Count + 1;
     console.log(Count);
-    event.target.parentNode.add(Count);
+    //event.target.parentNode.add(Count);
+    
 }
 
 
@@ -31,10 +32,16 @@ function addtodo(){
     button.innerHTML = 'Delete';
     button.addEventListener('click', removeTodo);
 
-    // 
+    //  like button
+    const button2 = document.createElement('button');
+    button2.type = 'button';
+    button2.classList.add('like-todo');
+    button2.innerHTML = 'Like';
+    button2.addEventListener('click', likeTodo);
+    
 
     // h3 , button -> div
-    todo.append(h3, button);
+    todo.append(h3, button, button2);
 
     // div + todo list
     todoList.prepend(todo);
