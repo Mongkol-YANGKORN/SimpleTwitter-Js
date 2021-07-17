@@ -6,3 +6,16 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #F5F8FA;
+
+}
