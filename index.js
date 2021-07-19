@@ -41,7 +41,7 @@ function addtodo(){
     
 
     // h3 , button -> div
-    todo.append(h3, button, button2);
+    todo.append(h3, button2, button);
 
     // div + todo list
     todoList.prepend(todo);

@@ -6,16 +6,93 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
-
 body {
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+.wrapper {
+  background: #fff;
+  width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.form {
+  padding: 25px 30px;
 }
 
-.wrapper{
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #F5F8FA;
-
+.form header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
 }
+
+.form form {
+  margin: 20px 0;
+}
+
+.todo-title {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-todo{
+  height: 45px;
+  width: 390px;
+  border: none;
+  color: #F5F8FA;
+  font-size: 17px;
+  background: #1DA1F2;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+.todo {
+  margin: 20px 0;
+  color: #14171A;
+  background: #F5F8FA;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #E1E8ED;
+}
+.todo::-webkit-scrollbar {
+  width: 0px;
+}
+
+.remove-Todo {
+  margin-top: 13px;
+  height: 45px;
+  width: 50%;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  background: #657786;
+  color: #F5F8FA;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-todo {
+  margin-top: 13px;
+  height: 45px;
+  width: 50%;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  background: #1DA1F2;
+  color: #F5F8FA;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
