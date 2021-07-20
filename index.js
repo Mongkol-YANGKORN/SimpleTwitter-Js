@@ -2,20 +2,21 @@ const TodoTitle = document.querySelector('.todo-title');
 const TodoButton = document.querySelector('.add-todo');
 const todoList = document.querySelector('.todo-list');
 
+
 function removeTodo(event){
     event.target.parentNode.remove();
 }
 
-function likeTodo(event){
-    let Count = 0;
-    Count = Count + 1;
-    console.log(Count);
-    //event.target.parentNode.add(Count);
-    
-}
 
 
 function addtodo(){
+    function likeTodo(){
+        count++;
+        showLike.innerHTML=`Like of Clicks are: ${count}`;
+    }
+
+    let count = 0;
+    const showLike = document.createElement('h3');
 
     // div
     const todo = document.createElement('div');
@@ -41,7 +42,7 @@ function addtodo(){
     
 
     // h3 , button -> div
-    todo.append(h3, button2, button);
+    todo.append(h3, button2, button, showLike);
 
     // div + todo list
     todoList.prepend(todo);
